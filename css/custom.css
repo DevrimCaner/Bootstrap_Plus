@@ -22,24 +22,31 @@ button{
     background-image: linear-gradient(to right, #747d8c 0%, #a4b0be 51%, #747d8c 100%);
 }
 .btn-gradient-success{
-    background-image: linear-gradient(to right, #27ae60 0%, #32ff7e 51%, #27ae60 100%);
+    
+    background-image: linear-gradient(to right, #6ab04c 0%, #badc58 51%, #6ab04c 100%);
 }
 .btn-gradient-danger{
     background-image: linear-gradient(to right, #c0392b 0%, #ff4d4d 51%, #c0392b 100%);
 }
 .btn-gradient-warning{
-    background-image: linear-gradient(to right, #f39c12 0%, #fffa65 51%, #f39c12 100%);
+    background-image: linear-gradient(to right, #f0932b 0%, #f9ca24 51%, #f0932b 100%);
 }
 .btn-gradient-info{
-    background-image: linear-gradient(to right, #3a7bd5 0%, #41d3f0 51%, #3a7bd5 100%);
+    background-image: linear-gradient(to right, #0abde3 0%, #67e6dc 51%, #0abde3 100%);
 }
 .btn-gradient-light{
-    background-image: linear-gradient(to right, #3a7bd5 0%, #41d3f0 51%, #3a7bd5 100%);
+    background-image: linear-gradient(to right, #bdc3c7 0%, #ecf0f1 51%, #bdc3c7 100%);
+    color: #2d3436;
 }
 .btn-gradient-dark{
-    background-image: linear-gradient(to right, #2c3e50 0%, #4b4b4b 51%, #2c3e50 100%);
+    background-image: linear-gradient(to right, #2d3436 0%, #636e72 51%, #2d3436 100%);
 }
 
 .color{
-    background-image: linear-gradient(to right, #c0392b 0%, #ff4d4d 51%, #c0392b 100%);
+    background-image: linear-gradient(to right, #0abde3 0%, #67e6dc 51%, #0abde3 100%);
 }
+
+/*
+    background-image: linear-gradient(to right, #27ae60 0%, #32ff7e 51%, #27ae60 100%);
+    background-image: linear-gradient(to right, #f39c12 0%, #fffa65 51%, #f39c12 100%);
+*/
