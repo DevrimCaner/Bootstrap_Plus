@@ -2633,7 +2633,7 @@
     background-color: #f1c40f;
   }
   
-  .btn-warning:hover {
+  .btn-warning:hover {btn
     color: #fff;
     background-color: #f39c12;
   }
@@ -2689,18 +2689,14 @@
   }
   
   .btn-outline-primary {
-    color: #007bff;
-    border-color: #007bff;
+    color: #3498db;
+    border: solid 2px #3498db;
+    box-shadow: none;
+    
   }
   
   .btn-outline-primary:hover {
-    color: #fff;
-    background-color: #007bff;
-    border-color: #007bff;
-  }
-  
-  .btn-outline-primary:focus, .btn-outline-primary.focus {
-    box-shadow: 0 0 0 0.2rem rgba(0, 123, 255, 0.5);
+    background-color: rgba(52, 152, 219, 0.3);
   }
   
   .btn-outline-primary.disabled, .btn-outline-primary:disabled {
@@ -2711,13 +2707,8 @@
   .btn-outline-primary:not(:disabled):not(.disabled):active, .btn-outline-primary:not(:disabled):not(.disabled).active,
   .show > .btn-outline-primary.dropdown-toggle {
     color: #fff;
-    background-color: #007bff;
-    border-color: #007bff;
-  }
-  
-  .btn-outline-primary:not(:disabled):not(.disabled):active:focus, .btn-outline-primary:not(:disabled):not(.disabled).active:focus,
-  .show > .btn-outline-primary.dropdown-toggle:focus {
-    box-shadow: 0 0 0 0.2rem rgba(0, 123, 255, 0.5);
+    background-color: #2980b9;
+    padding: 0.275rem 0.50rem;
   }
   
   .btn-outline-secondary {
@@ -2946,14 +2937,16 @@
   /* En son Burada kaldık */
   .btn-link {
     font-weight: 400;
-    color: #007bff;
+    color: #2980b9;
     text-decoration: none;
     box-shadow: none;
   }
   
   .btn-link:hover {
-    color: #0056b3;
     text-decoration: underline;
+  }
+  .btn-link:active{
+    color:  #0abde3;
   }
   
   .btn-link:disabled, .btn-link.disabled {
