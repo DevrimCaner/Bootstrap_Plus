@@ -2706,9 +2706,7 @@
   
   .btn-outline-primary:not(:disabled):not(.disabled):active, .btn-outline-primary:not(:disabled):not(.disabled).active,
   .show > .btn-outline-primary.dropdown-toggle {
-    color: #fff;
-    background-color: #2980b9;
-    padding: 0.275rem 0.50rem;
+    border-width: 1px;
   }
   
   .btn-outline-secondary {
