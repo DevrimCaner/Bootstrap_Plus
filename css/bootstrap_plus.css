@@ -2562,7 +2562,8 @@
   .btn-gradient-info:not(:disabled):not(.disabled):hover,
   .btn-gradient-light:not(:disabled):not(.disabled):hover,
   .btn-gradient-dark:not(:disabled):not(.disabled):hover{
-    background-position: right center; 
+    background-position: right center;
+    color: #fff;
   }
   .btn-gradient-primary.btn-block,
   .btn-secondary-primary.btn-block,
@@ -2661,6 +2662,7 @@
   
   .btn-outline-primary:not(:disabled):not(.disabled):not(:disabled):not(.disabled):hover {
     background-color: rgba(52, 152, 219, 0.3);
+    color: #3498db;
   }
   .btn-outline-secondary {
     color: #95a5a6;
@@ -2669,6 +2671,7 @@
   
   .btn-outline-secondary:not(:disabled):not(.disabled):not(:disabled):not(.disabled):hover {
     background-color: rgba(149, 165, 166, 0.3);
+    color: #95a5a6;
   }
   
   .btn-outline-success {
@@ -2678,6 +2681,7 @@
   
   .btn-outline-success:not(:disabled):not(.disabled):not(:disabled):not(.disabled):hover {
     background-color: rgba(46, 204, 112, 0.3);
+    color: #2ecc71;
   }
   
   .btn-outline-info {
@@ -2687,6 +2691,7 @@
   
   .btn-outline-info:hover {
     background-color: rgba(24, 220, 255, 0.3);
+    color: #18dcff;
   }
   
   .btn-outline-warning {
@@ -2696,6 +2701,7 @@
   
   .btn-outline-warning:not(:disabled):not(.disabled):not(:disabled):not(.disabled):hover {
     background-color: rgba(241, 196, 15, 0.3);
+    color: #f1c40f;
   }
   
   .btn-outline-danger {
@@ -2705,6 +2711,7 @@
   
   .btn-outline-danger:not(:disabled):not(.disabled):not(:disabled):not(.disabled):hover {
     background-color: rgba(231, 77, 60, 0.3);
+    color: #e74c3c;
   }
   
   .btn-outline-light {
@@ -2712,12 +2719,9 @@
     border: solid 2px #bdc3c7;
   }
   
-  .btn-outline-light:hover {
+  .btn-outline-light:not(:disabled):not(.disabled):not(:disabled):not(.disabled):hover {
     background-color: rgba(189, 195, 199, 0.3);
-  }
-  .btn-outline-light.disabled, .btn-outline-light:disabled {
-    color: #f8f9fa;
-    background-color: transparent;
+    color: #bdc3c7;
   }
   
   .btn-outline-dark {
@@ -2727,6 +2731,7 @@
   
   .btn-outline-dark:not(:disabled):not(.disabled):not(:disabled):not(.disabled):hover {
     background-color: rgba(52, 58, 64, 0.3);
+    color: #4b4b4b;
   }
   
   .btn-link {
