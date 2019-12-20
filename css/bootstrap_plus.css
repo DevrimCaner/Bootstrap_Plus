@@ -4880,8 +4880,6 @@
     position: relative;
     padding: 0.75rem 1.25rem;
     margin-bottom: 1rem;
-    border: 1px solid transparent;
-    border-radius: 0.25rem;
   }
   
   .alert-heading {
@@ -4905,9 +4903,8 @@
   }
   
   .alert-primary {
-    color: #004085;
-    background-color: #cce5ff;
-    border-color: #b8daff;
+    color: #fff;
+    background-color: #74b9ff;
   }
   
   .alert-primary hr {
@@ -4915,7 +4912,7 @@
   }
   
   .alert-primary .alert-link {
-    color: #002752;
+    color: #fff;
   }
   
   .alert-secondary {
@@ -4933,9 +4930,8 @@
   }
   
   .alert-success {
-    color: #155724;
-    background-color: #d4edda;
-    border-color: #c3e6cb;
+    color: #fff;
+    background-color: #55efc4;
   }
   
   .alert-success hr {
@@ -4961,9 +4957,8 @@
   }
   
   .alert-warning {
-    color: #856404;
-    background-color: #fff3cd;
-    border-color: #ffeeba;
+    color: #fff;
+    background-color: #ffeaa7;
   }
   
   .alert-warning hr {

@@ -1,4 +1,40 @@
 /*
+Main Colors
+
+Primary
+    #3498db
+    #2980b9
+    #74b9ff
+Secondary
+    #95a5a6
+    #7f8c8d
+Success
+    #2ecc71
+    #27ae60
+Danger
+    #e74c3c
+    #c0392b
+Warning
+    #f1c40f
+    #f39c12
+Info
+    #18dcff
+    #17c0eb
+Light
+    #ecf0f1
+    #bdc3c7
+Darrk
+    #4b4b4b
+    #3d3d3d
+
+-
+Black Text
+    #212529
+White Text
+    #fff
+
+
+
     background-image: linear-gradient(to right, #27ae60 0%, #32ff7e 51%, #27ae60 100%);
     background-image: linear-gradient(to right, #f39c12 0%, #fffa65 51%, #f39c12 100%);
 */
