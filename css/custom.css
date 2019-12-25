@@ -4,7 +4,6 @@ Main Colors
 Primary
     #3498db
     #2980b9
-    #74b9ff
 Secondary
     #95a5a6
     #7f8c8d
@@ -38,3 +37,36 @@ White Text
     background-image: linear-gradient(to right, #27ae60 0%, #32ff7e 51%, #27ae60 100%);
     background-image: linear-gradient(to right, #f39c12 0%, #fffa65 51%, #f39c12 100%);
 */
+
+.custom {
+    background-color: rgba(52, 152, 219, 0.3);
+    color: #3498db;
+
+    background-color: rgba(149, 165, 166, 0.3);
+    color: #95a5a6;
+    border-color: #95a5a6;
+
+    background-color: rgba(46, 204, 112, 0.3);
+    color: #2ecc71;
+    border-color: #2ecc71;
+
+    background-color: rgba(24, 220, 255, 0.3);
+    color: #18dcff;
+    border-color: #18dcff;
+
+    background-color: rgba(241, 196, 15, 0.3);
+    color: #f1c40f;
+    border-color: #f1c40f;
+
+    background-color: rgba(231, 77, 60, 0.3);
+    color: #e74c3c;
+    border-color: #e74c3c;
+
+    background-color: rgba(189, 195, 199, 0.3);
+    color: #bdc3c7;
+    border-color: #bdc3c7;
+
+    background-color: rgba(52, 58, 64, 0.3);
+    color: #4b4b4b;
+    border-color: #4b4b4b;
+}
