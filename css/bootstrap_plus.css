@@ -4731,20 +4731,14 @@
     top: -1px;
   }
   
-  .badge-pill {
-    padding-right: 0.6em;
-    padding-left: 0.6em;
-    border-radius: 10rem;
-  }
-  
   .badge-primary {
     color: #fff;
-    background-color: #007bff;
+    background-color: #3498db;
   }
   
   a.badge-primary:hover, a.badge-primary:focus {
     color: #fff;
-    background-color: #0062cc;
+    background-color: #2980b9;
   }
   
   a.badge-primary:focus, a.badge-primary.focus {
@@ -4754,12 +4748,12 @@
   
   .badge-secondary {
     color: #fff;
-    background-color: #6c757d;
+    background-color: #95a5a6;
   }
   
   a.badge-secondary:hover, a.badge-secondary:focus {
     color: #fff;
-    background-color: #545b62;
+    background-color: #7f8c8d;
   }
   
   a.badge-secondary:focus, a.badge-secondary.focus {
@@ -4769,12 +4763,12 @@
   
   .badge-success {
     color: #fff;
-    background-color: #28a745;
+    background-color: #2ecc71;
   }
   
   a.badge-success:hover, a.badge-success:focus {
     color: #fff;
-    background-color: #1e7e34;
+    background-color: #27ae60;
   }
   
   a.badge-success:focus, a.badge-success.focus {
@@ -4784,12 +4778,12 @@
   
   .badge-info {
     color: #fff;
-    background-color: #17a2b8;
+    background-color: #18dcff;
   }
   
   a.badge-info:hover, a.badge-info:focus {
     color: #fff;
-    background-color: #117a8b;
+    background-color: #17c0eb;
   }
   
   a.badge-info:focus, a.badge-info.focus {
