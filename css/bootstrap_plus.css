@@ -117,14 +117,16 @@
   }
   
   a {
-    color: #007bff;
+    color: #2980b9;
     text-decoration: none;
     background-color: transparent;
   }
   
   a:hover {
-    color: #0056b3;
     text-decoration: underline;
+  }
+  a:active {
+    color:  #0abde3;
   }
   
   a:not([href]) {
@@ -1997,11 +1999,10 @@
     font-size: 1rem;
     font-weight: 400;
     line-height: 1.5;
-    color: #495057;
+    color: #3d3d3d;
     background-color: #fff;
     background-clip: padding-box;
-    border: 1px solid #ced4da;
-    border-radius: 0.25rem;
+    border: 2px solid#bdc3c7;
     transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
   }
   
@@ -2024,9 +2025,9 @@
   .form-control:focus {
     color: #495057;
     background-color: #fff;
-    border-color: #80bdff;
+    border-color: #3498db;
     outline: 0;
-    box-shadow: 0 0 0 0.2rem rgba(0, 123, 255, 0.25);
+    box-shadow: 0 2px 2px 0 rgba(0,0,0,0.14), 0 3px 1px -2px rgba(0,0,0,0.12), 0 1px 5px 0 rgba(0,0,0,0.2) ;
   }
   
   .form-control::-webkit-input-placeholder {
@@ -2168,6 +2169,7 @@
     position: absolute;
     margin-top: 0.3rem;
     margin-left: -1.25rem;
+    border-radius: 0;
   }
   
   .form-check-input[disabled] ~ .form-check-label,
@@ -4581,8 +4583,7 @@
     padding: 0.75rem 1rem;
     margin-bottom: 1rem;
     list-style: none;
-    background-color: #e9ecef;
-    border-radius: 0.25rem;
+    background-color: #ecf0f1;
   }
   
   .breadcrumb-item + .breadcrumb-item {
@@ -4592,8 +4593,8 @@
   .breadcrumb-item + .breadcrumb-item::before {
     display: inline-block;
     padding-right: 0.5rem;
-    color: #6c757d;
-    content: "/";
+    color: #95a5a6;
+    content: ">";
   }
   
   .breadcrumb-item + .breadcrumb-item:hover::before {
@@ -4605,7 +4606,7 @@
   }
   
   .breadcrumb-item.active {
-    color: #6c757d;
+    color: #7f8c8d;
   }
   
   .pagination {
@@ -4622,9 +4623,9 @@
     padding: 0.5rem 0.75rem;
     margin-left: -1px;
     line-height: 1.25;
-    color: #007bff;
+    color: #3498db;
     background-color: #fff;
-    border: 1px solid #dee2e6;
+    border: 1px solid #ecf0f1;
   }
   
   .page-link:hover {
