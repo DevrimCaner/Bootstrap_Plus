@@ -85,6 +85,8 @@ White Text
     border: 2px solid #212529;
     box-sizing: border-box;
     border-radius: 1px;
+    transition: all 0.2s ease;
+
 }
 .customCheck > input[type="checkbox"]:checked:before{
     border-left-width: 0px;
