@@ -139,12 +139,20 @@ White Text
 }
 
 
-
-
 .customSelect{
-
+    position: relative;
 }
 
-.customSelect > select{
-    
+.customSelect >  select{
+    -webkit-appearance: button;
+    position: relative;
+}
+.customSelect > select:before{
+    content: '';
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    width: 40px;
+    height: 40px;
+    background-color: #3498db;
 }
