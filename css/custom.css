@@ -137,7 +137,7 @@ White Text
 .customRadio > input[type="radio"]:checked:before{
     transform: scale(0.6);
 }
-
+/*
 
 .customSelect{
     position: relative;
@@ -155,4 +155,4 @@ White Text
     width: 40px;
     height: 40px;
     background-color: #3498db;
-}
+}*/
