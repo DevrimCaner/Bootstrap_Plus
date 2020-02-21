@@ -137,8 +137,18 @@ White Text
 .customRadio > input[type="radio"]:checked:before{
     transform: scale(0.6);
 }
-/*
 
+.customSelect select{
+    text-transform: none;
+    font-size: 100%;
+    line-height: 1.15;
+    margin: 0;
+}
+.customSelect select:focus{
+    outline: 1px solid #c9f3ef;
+}
+
+/*
 .customSelect{
     position: relative;
 }
