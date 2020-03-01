@@ -2563,7 +2563,6 @@
   .btn-gradient-light:not(:disabled):not(.disabled):hover,
   .btn-gradient-dark:not(:disabled):not(.disabled):hover{
     background-position: right center;
-    color: #fff;
   }
   .btn-gradient-primary.btn-block,
   .btn-secondary-primary.btn-block,

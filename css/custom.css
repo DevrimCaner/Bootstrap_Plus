@@ -91,11 +91,11 @@ White Text
 
 }
 .customCheck > input[type="checkbox"]:checked:before{
-    border-left-width: 0px;
-    border-top-width: 0px;
+    border-left: transparent;
+    border-top: transparent;
     border-color: #3498db;
     width: 10px;
-    transform: rotate(40deg) translate(2px,-5px);
+    transform: rotate(35deg) translate(2px,-5px);
     border-radius: 0 !important;
 }
 
@@ -142,22 +142,67 @@ White Text
     transform: scale(0.6);
 }
 
+.customRadio2{
+    vertical-align: middle;
+    transition: all 0.2 ease;
+}
+
+.customRadio2 > input[type="radio"]{
+    position: relative;
+    top: 4px;
+    width: 18px;
+    height: 18px;
+    -webkit-appearance: none;
+    outline: none;
+}
+.customRadio2 > input[type="radio"]:before{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border: 2px solid #212529;
+    border-radius: 100%;
+}
+.customRadio2 > input[type="radio"]:checked:before{
+    transform: scale(0);
+}
+.customRadio2 > input[type="radio"]:after{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 50%;
+    height: 100%;
+    border: 2px solid #3498db;
+    border-top: none;
+    border-left: none;
+    transform: scale(0) rotate(35deg) translate(2px,-3px);
+}
+.customRadio2 > input[type="radio"]:checked:after{
+    transform: scale(1.1) rotate(35deg) translate(2px,-3px);
+}
+
 /* CUSTOM SELECT */
 
-.customSelect {
+.select-box {
     position: relative;
   }
   
-  .customSelect select {
+  .select-box select {
     display: none;
   }
 
-  .select-selected {
+  .select-box-item {
     border: 2px solid #bdc3c7;
     border-radius: 0.25rem;
   }
+  .select-box-item:focus{
+      background-color: tomato;
+  }
   
-  .select-selected:after {
+  .select-box-item:after {
     position: absolute;
     content: "";
     top: 14px;
@@ -167,10 +212,10 @@ White Text
     border: 6px solid transparent;
   }
   
-  .select-selected.select-arrow-active:after {
+  .select-box-item.select-arrow-active:after {
     top: 7px;
   }
-  .select-items div,.select-selected {
+  .select-items div,.select-box-item {
     padding: 8px 16px;
     cursor: pointer;
   }
@@ -193,6 +238,7 @@ White Text
   }
   
   .select-items div:hover, .same-as-selected {
+    border-radius: 0.15rem;
     background-color: #3498db;
     color: #fff;
   }
