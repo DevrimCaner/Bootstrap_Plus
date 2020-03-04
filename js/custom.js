@@ -11,20 +11,17 @@ for (i = 0; i < selectBox.length; i++) {
   selectBoxOptionlist = document.createElement("DIV");
   selectBoxOptionlist.setAttribute("class", "select-items select-hide");
   for (j = 1; j < selectBoxOriginalSelect.length; j++) {
-    // For each option in the original select element create a new DIV that will act as an option item
-    //!!!!!!!!!!!!!!!!!!!!*********************!!!!!!!!!!!!!!!!!
+    // For each option
     selectBoxOption = document.createElement("DIV");
     selectBoxOption.innerHTML = selectBoxOriginalSelect.options[j].innerHTML;
-    selectBoxOption.addEventListener("click", function (e) {
-      /* When an item is clicked, update the original select box,
-      and the selected item: */
-      var y, i, k, s, h;
-      s = this.parentNode.parentNode.getElementsByTagName("select")[0];
-      h = this.parentNode.previousSibling;
-      for (i = 0; i < s.length; i++) {
-        if (s.options[i].innerHTML == this.innerHTML) {
-          s.selectedIndex = i;
-          h.innerHTML = this.innerHTML;
+    selectBoxOption.addEventListener("click", function (e) {// When options clicked
+      var y, i, k, parentSelect, selectedDiv;
+      parentSelect = this.parentNode.parentNode.getElementsByTagName("select")[0];
+      selectedDiv = this.parentNode.previousSibling;
+      for (i = 0; i < parentSelect.length; i++) {
+        if (parentSelect.options[i].innerHTML == this.innerHTML) {
+          parentSelect.selectedIndex = i;
+          selectedDiv.innerHTML = this.innerHTML;
           y = this.parentNode.getElementsByClassName("same-as-selected");
           for (k = 0; k < y.length; k++) {
             y[k].removeAttribute("class");
@@ -33,7 +30,7 @@ for (i = 0; i < selectBox.length; i++) {
           break;
         }
       }
-      h.click();
+      selectedDiv.click();
     });
     selectBoxOptionlist.appendChild(selectBoxOption);
   }
