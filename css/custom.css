@@ -236,9 +236,17 @@ White Text
   .select-hide {
     display: none;
   }
+
+  .select-items div:first-child{
+      border-top-right-radius: 0.15rem;
+      border-top-left-radius: 0.15rem;
+  }
+  .select-items div:last-child{
+    border-bottom-right-radius: 0.15rem;
+    border-bottom-left-radius: 0.15rem;
+}
   
   .select-items div:hover, .same-as-selected {
-    border-radius: 0.15rem;
     background-color: #3498db;
     color: #fff;
   }
