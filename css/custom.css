@@ -205,15 +205,17 @@ White Text
   .select-box-item:after {
     position: absolute;
     content: "";
-    top: 14px;
+    bottom: 10px;
     right: 10px;
     width: 0;
     height: 0;
     border: 6px solid transparent;
+    border-color: #212529 transparent transparent transparent;
   }
   
   .select-box-item.select-arrow-active:after {
-    top: 7px;
+    transform: rotate(180deg);
+    bottom: 15px;
   }
   .select-items div,.select-box-item {
     padding: 8px 16px;

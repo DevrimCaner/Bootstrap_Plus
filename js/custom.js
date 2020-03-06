@@ -36,8 +36,7 @@ for (i = 0; i < selectBox.length; i++) {
   }
   selectBox[i].appendChild(selectBoxOptionlist);
   selectBoxSelect.addEventListener("click", function (e) {
-    /* When the select box is clicked, close any other select boxes,
-    and open/close the current select box: */
+    //When the select box is clicked, close any other select boxes and open/close the current select box
     e.stopPropagation();
     closeAllSelect(this);
     this.nextSibling.classList.toggle("select-hide");
