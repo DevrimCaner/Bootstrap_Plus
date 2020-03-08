@@ -40,13 +40,13 @@ for (i = 0; i < selectBox.length; i++) {
     e.stopPropagation();
     closeAllSelect(this);
     this.nextSibling.classList.toggle("select-hide");
+    this.classList.toggle("select-box-item-focus");
     this.classList.toggle("select-arrow-active");
   });
 }
 
 function closeAllSelect(elmnt) {
-  /* A function that will close all select boxes in the document,
-  except the current select box: */
+  // A function that will close all select boxes in the document, except the current select box
   var x, y, i, arrNo = [];
   x = document.getElementsByClassName("select-items");
   y = document.getElementsByClassName("select-box-item");
@@ -54,6 +54,7 @@ function closeAllSelect(elmnt) {
     if (elmnt == y[i]) {
       arrNo.push(i)
     } else {
+      y[i].classList.remove("select-box-item-focus");
       y[i].classList.remove("select-arrow-active");
     }
   }

@@ -188,41 +188,44 @@ White Text
 
 .select-box {
     position: relative;
-  }
+}
   
-  .select-box select {
+.select-box select {
     display: none;
-  }
+}
 
-  .select-box-item {
+.select-box-item {
     border: 2px solid #bdc3c7;
     border-radius: 0.25rem;
-  }
-  .select-box-item:focus{
-      background-color: tomato;
-  }
-  
-  .select-box-item:after {
+}
+.select-box-item-focus{
+    box-shadow: 0 2px 2px 0 rgba(0,0,0,0.14), 0 3px 1px -2px rgba(0,0,0,0.12), 0 1px 5px 0 rgba(0,0,0,0.2) ;
+    border: 2px solid #3498db;
+}
+.select-box-item:after {
     position: absolute;
     content: "";
-    bottom: 10px;
+    bottom: 15px;
     right: 10px;
-    width: 0;
-    height: 0;
-    border: 6px solid transparent;
-    border-color: #212529 transparent transparent transparent;
+    width: 12px;
+    height: 12px;
+    border-bottom: 4px solid #bdc3c7;
+    border-right: 4px solid #bdc3c7;
+    transform: rotate(45deg);
   }
   
-  .select-box-item.select-arrow-active:after {
-    transform: rotate(180deg);
-    bottom: 15px;
+.select-box-item.select-arrow-active:after {
+    transform: rotate(225deg);
+    bottom: 12px;
+    border-bottom: 4px solid #3498db;
+    border-right: 4px solid #3498db;
   }
-  .select-items div,.select-box-item {
+.select-items div,.select-box-item {
     padding: 8px 16px;
     cursor: pointer;
   }
   
-  .select-items {
+.select-items {
     position: absolute;
     top: 100%;
     left: 0;
@@ -233,22 +236,49 @@ White Text
     border-radius: 0.25rem;
     border: 2px solid #bdc3c7;
     box-shadow: 0 2px 2px 0 rgba(0,0,0,0.14), 0 3px 1px -2px rgba(0,0,0,0.12), 0 1px 5px 0 rgba(0,0,0,0.2) ;
+    max-height: 225px;
+    overflow-y: auto;
+    overflow-x: hidden;
   }
   
-  .select-hide {
+.select-hide {
     display: none;
   }
 
-  .select-items div:first-child{
+.select-items div:first-child{
       border-top-right-radius: 0.15rem;
       border-top-left-radius: 0.15rem;
-  }
-  .select-items div:last-child{
+}
+.select-items div:last-child{
     border-bottom-right-radius: 0.15rem;
     border-bottom-left-radius: 0.15rem;
 }
   
-  .select-items div:hover, .same-as-selected {
+.select-items div:hover, .same-as-selected {
     background-color: #3498db;
     color: #fff;
-  }
+}
+
+/* Scrol Bar */
+
+::-webkit-scrollbar {
+    width: 5px;
+    border-bottom-right-radius: 0.15rem;
+}
+::-webkit-scrollbar-track {
+    background: transparent;
+}
+::-webkit-scrollbar-track-piece:start {
+    background: transparent;
+}
+
+::-webkit-scrollbar-track-piece:end {
+    background: transparent;
+}
+::-webkit-scrollbar-thumb {
+    background: #bdc3c7;
+    border-radius: 0.15rem;
+}
+::-webkit-scrollbar-thumb:hover {
+    background: #3498db;
+}
